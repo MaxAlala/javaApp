@@ -1,5 +1,6 @@
 body {
     color: #113;
+    overflow:hidden;
 }
 
 
@@ -8,7 +9,9 @@ body {
     -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
     box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
 }
-
+/*::-webkit-scrollbar {*/
+    /*display: none;*/
+/*}*/
 
 #myImg {
     border-radius: 5px;
@@ -18,7 +21,7 @@ body {
 
 #myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -33,12 +36,17 @@ body {
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
+
+#needToBeHidden{
+    overflow: auto;
+}
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
+
 }
 
 /* Caption of Modal Image */

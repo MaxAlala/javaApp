@@ -13,7 +13,10 @@ var captionText = document.getElementById("caption");
 //     captionText.innerHTML = this.alt;
 // }
 function Modal(el){
+    // display: block;
+    // overflow: auto;
     modal.style.display = "block";
+    modal.style.overflow = "auto";
     modalImg.src = el.src;
     captionText.innerHTML = el.alt;
 }
@@ -21,7 +24,16 @@ function Modal(el){
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
         modal.style.display = "none";
     }
+
+// document.body.addEventListener('keyup', e => {
+//     if (e.keyCode === 27) {
+//     modal.style.display = "none";
+// }
+// })
+

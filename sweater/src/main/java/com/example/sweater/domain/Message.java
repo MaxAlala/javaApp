@@ -11,15 +11,6 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
 
-    public Long getId() {
-        return Id;
-    }
-
-    public void setId(Long id) {
-        Id = id;
-    }
-
-
     @NotBlank(message = "Please fill the message")
     @Length(max = 2048, message = "Message too large(more than 2kB)")
     private String text;
@@ -33,15 +24,7 @@ public class Message {
     private String filename;
 
 
-    public User getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
-    }
-
-    public Message() {
+      public Message() {
 
     }
 
@@ -50,6 +33,17 @@ public class Message {
         this.tag = tag;
         this.author = author;
     }
+
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
+    }
+
+
 
     public String getFilename() {
         return filename;
@@ -79,4 +73,14 @@ public class Message {
     public void setText(String text) {
         this.text = text;
     }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
+    }
+
+
 }

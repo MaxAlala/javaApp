@@ -10,6 +10,7 @@ userid = user.getId()
 
 <@c.page >
 
+
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">

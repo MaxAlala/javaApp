@@ -21,7 +21,7 @@
 <body>
     <#include "navbar.ftl">
 
-<div class="container mt-5">
+<div class="container mt-5" id="needToBeHidden">
 <#nested>
 </div>
 <!-- Optional JavaScript -->
